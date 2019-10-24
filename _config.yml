@@ -16,7 +16,12 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-hightlighter:       rouge
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
